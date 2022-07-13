@@ -1,11 +1,3 @@
-/*!
-* Start Bootstrap - Agency v7.0.4 (https://startbootstrap.com/theme/agency)
-* Copyright 2013-2021 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -53,33 +45,4 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
-
-function initMap() {
-    // The location of Uluru
-    const place = { lat: 50.84792, lng: 20.61295 };
-    // The map, centered at Uluru
-    const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 15,
-        center: place,
-    });
-    // The marker, positioned at Uluru
-    const marker = new google.maps.Marker({
-        position: place,
-        map: map,
-    });
-
-    const panorama = new google.maps.StreetViewPanorama(
-        document.getElementById("pano"),
-        {
-            position: place,
-            pov: {
-                heading: 285,
-                pitch: 1,
-            },
-        }
-    );
-
-    map.setStreetView(panorama);
-}
-
 
